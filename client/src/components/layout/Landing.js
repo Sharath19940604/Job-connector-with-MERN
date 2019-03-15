@@ -15,7 +15,7 @@ class Landing extends Component {
               passport and JWTs
             </p>
             <br />
-            <a href="http://localhost:3000/Register"
+            <a href="http://localhost:3000/register"
               style={{
                 width: "150px",
                 borderRadius: "3px",
@@ -25,7 +25,7 @@ class Landing extends Component {
             >
               Register
             </a>
-            <a href="http://localhost:3000/Login"
+            <a href="http://localhost:3000/login"
               style={{
                 marginLeft: "2rem",
                 width: "150px",
