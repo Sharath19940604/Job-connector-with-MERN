@@ -8,6 +8,7 @@ const validateRegisterInput = require("../../validation/register");
 const validateLoginInput = require("../../validation/login");
 // Load User model
 const User = require("../../models/User");
+const gravatar = require("gravatar");
 
 
 // @route POST api/users/register
@@ -23,12 +24,20 @@ router.post("/register", (req, res) => {
   User.findOne({ email: req.body.email }).then(user => {
       if (user) {
         return res.status(400).json({ email: "Email already exists" });
-      } 
+      } else {
+  const avatar = gravatar.url(req.body.email,{
+    s:'200',
+    r:'pg',
+    default:'mm'
+  });
+
   const newUser = new User({
           name: req.body.name,
           email: req.body.email,
+          avatar:avatar,
           password: req.body.password
         });
+      
   // Hash password before saving in database
         bcrypt.genSalt(10, (err, salt) => {
           bcrypt.hash(newUser.password, salt, (err, hash) => {
@@ -41,6 +50,7 @@ router.post("/register", (req, res) => {
           });
         });
       }
+    }
     );
   });
 
@@ -71,14 +81,15 @@ router.post("/login",(req, res) => {
           // Create JWT Payload
           const payload = {
             id: user.id,
-            name: user.name
+            name: user.name,
+            avatar:user.avatar
           };
   // Sign token
           jwt.sign(
             payload,
             keys.secretOrKey,
             {
-              expiresIn: 31556926 // 1 year in seconds
+              expiresIn: 3600 // 1 year in seconds
             },
             (err, token) => {
               res.json({
