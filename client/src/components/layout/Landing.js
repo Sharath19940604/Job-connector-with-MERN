@@ -1,39 +1,25 @@
-import React, { Component } from "react";
-class Landing extends Component {
+import React, { Component } from 'react'
+
+ class Landing extends Component {
   render() {
     return (
-      <div style={{ height: "75vh" }} className="container valign-wrapper">
-        <div className="row">
-          <div className="col s12 center-align">
-            <p className="flow-text grey-text text-darken-1">
-              Welcome!
-            </p>
-            <br />
-            <a href="http://localhost:3000/register"
-              style={{
-                width: "150px",
-                borderRadius: "3px",
-                letterSpacing: "1.5px"
-              }}
-              className="btn btn-large waves-effect waves-light hoverable blue accent-3"
-            >
-              Register
-            </a>
-            <a href="http://localhost:3000/login"
-              style={{
-                marginLeft: "2rem",
-                width: "150px",
-                borderRadius: "3px",
-                letterSpacing: "1.5px"
-              }}
-              className="btn btn-large waves-effect waves-light hoverable blue accent-3"
-            >
-              Log In
-            </a>
+        <div className="landing">
+         <div className="dark-overlay landing-inner text-light"> 
+          <div className="container">
+            <div className="row">
+              <div className="col-md-12 text-center">
+                <h1 className="display-3 mb-4">Developer Connector
+                </h1>
+                <p className="lead"> Create a developer profile/portfolio, share posts and get help from other developers</p>
+                <hr />
+                <a href="register.html" className="btn btn-lg btn-info mr-2">Sign Up</a>
+                <a href="login.html" className="btn btn-lg btn-light">Login</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    );
+    )
   }
 }
 export default Landing;
