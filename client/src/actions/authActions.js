@@ -1,8 +1,8 @@
 import axios from 'axios';
-import { GET_ERRORS } from './types';
+import { GET_ERRORS,SET_CURRENT_USER } from './types';
 import setAuthToken from '../utils/setAuthToken';
 import jwt_decode from 'jwt-decode'
-import { SET_CURRENT_USER } from '../actions/types';
+
 
 
 export const reguser = (userInfo,history) => dispatch => {
@@ -42,6 +42,12 @@ export const setCurrentUser = (decoded) => {
     return {
         type:SET_CURRENT_USER,
         payload: decoded
-    }
+    };
     
-}
+};
+
+export const logoutuser = () => dispatch => {
+    localStorage.removeItem('jwtToken');
+    setAuthToken(false);
+    dispatch(setCurrentUser({}))
+};

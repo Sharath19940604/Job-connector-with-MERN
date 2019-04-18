@@ -25,7 +25,6 @@ router.get('/', passport.authenticate('jwt',{ session : false}), (req,res) => {
         .populate('user',['name','avatar'])
     .then(prof => {
         if(!prof) {
-            console.log("i'm here");
             errors.noprof = 'no profile';
             return res.status(404).json(errors);
         }
@@ -102,6 +101,7 @@ router.post('/',passport.authenticate('jwt',{session:false}), (req,res) => {
     }
     const profflds = {};
     profflds.user = req.user.id;
+    console.log(profflds.user);
     if(req.body.handle) profflds.handle = req.body.handle;
     if(req.body.company) profflds.company = req.body.company;
     if(req.body.website) profflds.website = req.body.website;
@@ -129,9 +129,16 @@ router.post('/',passport.authenticate('jwt',{session:false}), (req,res) => {
                     
         } 
         else {
+            Profile.findOne({ handle: profflds.handle }).then(profile => {
+                if (profile) {
+                  errors.handle = 'That handle already exists';
+                  res.status(400).json(errors);
+                }
+      
                 // if no profile found then create  and save
                 new Profile(profflds).save().then(prof => res.json(prof));
-        }
+        });
+    }
     })
 })
     ;
