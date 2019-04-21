@@ -180,7 +180,7 @@ router.post('/experience', passport.authenticate('jwt',{ session : false}), (req
 // access: Private
 
 router.post('/education', passport.authenticate('jwt',{ session : false}), (req,res) => {
-
+    
     const { errors, isValid} = veducationp(req.body);
 
     if(!isValid)
@@ -189,19 +189,21 @@ router.post('/education', passport.authenticate('jwt',{ session : false}), (req,
     }
     Profile.findOne({ user: req.user.id })
     .then(prof => {
+        console.log("sss"+prof);
         const neweducation = {
-            schooling: req.body.schooling,
-            deg: req.body.deg,
-            Areaofstudy: req.body.Areaofstudy,
+            school: req.body.school,
+            degree: req.body.degree,
+            fieldofstudy: req.body.fieldofstudy,
             from: req.body.from,
             to: req.body.to,
-            current: req.body.current
-}
+            current: req.body.current,
+            description: req.body.description
+};
         prof.education.unshift(neweducation);
 
         prof.save().then(prof => res.json(prof));
         
-    })
+    });
     
 }
 );
@@ -243,4 +245,19 @@ router.delete('/education/:edu_id', passport.authenticate('jwt',{ session : fals
         
     .catch(err => res.status(404).json(err));
 });
+
+// @route   DELETE api/profile
+// @desc    Delete user and profile
+// @access  Private
+router.delete(
+    '/',
+    passport.authenticate('jwt', { session: false }),
+    (req, res) => {
+      Profile.findOneAndRemove({ user: req.user.id }).then(() => {
+        User.findOneAndRemove({ _id: req.user.id }).then(() =>
+          res.json({ success: true })
+        );
+      });
+    }
+  );
 module.exports = router;

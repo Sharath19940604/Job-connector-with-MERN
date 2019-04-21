@@ -3,19 +3,19 @@ const isEmpty = require("is-empty");
 module.exports = function veducationp(data) {
   let errors = {};
 // Convert empty fields to an empty string so we can use validator functions
-  data.schooling = !isEmpty(data.schooling) ? data.schooling : "";
-  data.deg = !isEmpty(data.deg) ? data.deg : "";
+  data.school = !isEmpty(data.school) ? data.school : "";
+  data.degree = !isEmpty(data.degree) ? data.degree : "";
   data.from = !isEmpty(data.from) ? data.from : "";
   data.to = !isEmpty(data.to) ? data.to : "";
-  data.Areaofstudy = !isEmpty(data.Areaofstudy) ? data.Areaofstudy : "";
+  data.fieldofstudy = !isEmpty(data.fieldofstudy) ? data.fieldofstudy : "";
   
 // schooling checks
-  if (Validator.isEmpty(data.schooling)) {
-    errors.schooling = "schooling field is required";
+  if (Validator.isEmpty(data.school)) {
+    errors.school = "schooling field is required";
   } 
 // deg checks
-  if (Validator.isEmpty(data.deg)) {
-    errors.deg = "deg field is required";
+  if (Validator.isEmpty(data.degree)) {
+    errors.degree = "deg field is required";
   }
 
 //from check
@@ -27,8 +27,8 @@ if (Validator.isEmpty(data.to)) {
     errors.to = "to field is required";
   }
 
-if (Validator.isEmpty(data.Areaofstudy)) {
-    errors.Areaofstudy = "Areaofstudy field is required";
+if (Validator.isEmpty(data.fieldofstudy)) {
+    errors.fieldofstudy = "Areaofstudy field is required";
   }
 
 

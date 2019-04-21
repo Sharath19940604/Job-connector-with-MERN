@@ -45,16 +45,14 @@ const ProfileSchema = new Schema({
                 required: true
             },
             location:{
-                type: String,
-                required: true
+                type: String
             },
             from:{
                 type: Date,
                 required: true
             },
             to:{
-                type:Date,
-                required: true
+                type:Date
             },
             current:{
                 type: Boolean,
@@ -69,29 +67,30 @@ const ProfileSchema = new Schema({
     ],
     education: [
         {
-            schooling:{
+            school:{
                 type: String,
                 required: true
             },
-            deg:{
+            degree:{
                 type: String,
                 required: true
             },
-            Areaofstudy:{
+            fieldofstudy:{
                 type: String,
                 required: true
             },
             from:{
-                type: Date,
-                required: true
+                type: Date
             },
             to:{
-                type:Date,
-                required: true
+                type:Date
             },
             current:{
                 type: Boolean,
                 default: true
+            },
+            description:{
+                type: String
             }
 
 
@@ -114,5 +113,4 @@ const ProfileSchema = new Schema({
     }
 
 });
-console.log("here too");
 module.exports = Profile = mongoose.model('profile',ProfileSchema);
