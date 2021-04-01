@@ -1,0 +1,58 @@
+[
+ {
+   "SPA": "Antelope Valley",
+   "Homeless Count per SPA": 2500,
+   "Density %": "13%",
+   "Lat": 34.07529268,
+   "Long": -118.4033112
+ },
+ {
+   "SPA": "San Fernando",
+   "Homeless Count per SPA": 2500,
+   "Density %": "13%",
+   "Lat": 34.08112913,
+   "Long": -118.41226
+ },
+ {
+   "SPA": "San Gabriel",
+   "Homeless Count per SPA": 4000,
+   "Density %": "21%",
+   "Lat": 34.08112913,
+   "Long": -118.41226
+ },
+ {
+   "SPA": "Metro",
+   "Homeless Count per SPA": 250,
+   "Density %": "1%",
+   "Lat": 34.0522,
+   "Long": -118.2437
+ },
+ {
+   "SPA": "West",
+   "Homeless Count per SPA": 5000,
+   "Density %": "27%",
+   "Lat": 34.0953,
+   "Long": -118.127
+ },
+ {
+   "SPA": "South",
+   "Homeless Count per SPA": 50,
+   "Density %": "0%",
+   "Lat": 34.0522,
+   "Long": -118.2437
+ },
+ {
+   "SPA": "East",
+   "Homeless Count per SPA": 3000,
+   "Density %": "16%",
+   "Lat": 34.1367,
+   "Long": -118.6615
+ },
+ {
+   "SPA": "South Bay",
+   "Homeless Count per SPA": 1500,
+   "Density %": "8%",
+   "Lat": 34.0736,
+   "Long": -118.4004
+ }
+]
