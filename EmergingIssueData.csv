@@ -1,0 +1,22 @@
+csa,Longitude,Latitude,first_day_of_prev_month,first_day_of_month,cur_month,prev_month,es_cur,es_prev,es_change_rate,th_cur,th_prev,th_change_rate,psh_cur,psh_prev,psh_change_rate,es_tooltip1,es_tooltip2,th_tooltip1,th_tooltip2,psh_tooltip1,psh_tooltip2
+Bell,-118.15191,33.996346,12/1/2018,1/1/2019,January,December,0,0,0,3,0,0,0,0,0,es_tooltip-1,es_tooltip-2,th_tooltip-1,ths_tooltip-2,psh_tooltip-1,psh_tooltip-2
+Burbank,-118.246796,34.181923,12/1/2018,1/1/2019,January,December,0,0,0,1,0,0,2,2,0,es_tooltip-1,es_tooltip-2,th_tooltip-1,ths_tooltip-2,psh_tooltip-1,psh_tooltip-2
+Cloverdale/Cochran,-118.35601,34.03894,12/1/2018,1/1/2019,January,December,2,0,0,0,0,0,0,0,0,es_tooltip-1,es_tooltip-2,th_tooltip-1,ths_tooltip-2,psh_tooltip-1,psh_tooltip-2
+Downtown,-118.257805,34.044724,12/1/2018,1/1/2019,January,December,0,0,0,0,0,0,3,0,0,es_tooltip-1,es_tooltip-2,th_tooltip-1,ths_tooltip-2,psh_tooltip-1,psh_tooltip-2
+Exposition Park,-118.29792,34.0186,12/1/2018,1/1/2019,January,December,0,0,0,0,0,0,1,0,0,es_tooltip-1,es_tooltip-2,th_tooltip-1,ths_tooltip-2,psh_tooltip-1,psh_tooltip-2
+Harvard Park,-118.29802,33.981857,12/1/2018,1/1/2019,January,December,2,0,0,0,0,0,1,0,0,es_tooltip-1,es_tooltip-2,th_tooltip-1,ths_tooltip-2,psh_tooltip-1,psh_tooltip-2
+Historic Filipinotown,-118.27108,34.070244,12/1/2018,1/1/2019,January,December,0,0,0,2,0,0,0,0,0,es_tooltip-1,es_tooltip-2,th_tooltip-1,ths_tooltip-2,psh_tooltip-1,psh_tooltip-2
+Hollywood,-118.35386,34.1003,12/1/2018,1/1/2019,January,December,1,0,0,0,0,0,0,0,0,es_tooltip-1,es_tooltip-2,th_tooltip-1,ths_tooltip-2,psh_tooltip-1,psh_tooltip-2
+Hyde Park,-118.32805,33.98308,12/1/2018,1/1/2019,January,December,4,0,0,0,0,0,0,0,0,es_tooltip-1,es_tooltip-2,th_tooltip-1,ths_tooltip-2,psh_tooltip-1,psh_tooltip-2
+Little Tokyo,-118.2416,34.046993,12/1/2018,1/1/2019,January,December,0,0,0,0,0,0,6,1,500,es_tooltip-1,es_tooltip-2,th_tooltip-1,ths_tooltip-2,psh_tooltip-1,psh_tooltip-2
+Long Beach,-118.112045,33.827675,12/1/2018,1/1/2019,January,December,0,0,0,0,0,0,3,0,0,es_tooltip-1,es_tooltip-2,th_tooltip-1,ths_tooltip-2,psh_tooltip-1,psh_tooltip-2
+North Hollywood,-118.39076,34.190002,12/1/2018,1/1/2019,January,December,1,0,0,0,0,0,0,0,0,es_tooltip-1,es_tooltip-2,th_tooltip-1,ths_tooltip-2,psh_tooltip-1,psh_tooltip-2
+Pomona,-117.715324,34.1259,12/1/2018,1/1/2019,January,December,0,0,0,0,0,0,1,0,0,es_tooltip-1,es_tooltip-2,th_tooltip-1,ths_tooltip-2,psh_tooltip-1,psh_tooltip-2
+Silverlake,-118.27024,34.0957,12/1/2018,1/1/2019,January,December,2,1,100,0,0,0,0,0,0,es_tooltip-1,es_tooltip-2,th_tooltip-1,ths_tooltip-2,psh_tooltip-1,psh_tooltip-2
+South Park,-118.2743,33.999718,12/1/2018,1/1/2019,January,December,0,1,-100,3,0,0,0,0,0,es_tooltip-1,es_tooltip-2,th_tooltip-1,ths_tooltip-2,psh_tooltip-1,psh_tooltip-2
+Temple-Beaudry,-118.26774,34.069824,12/1/2018,1/1/2019,January,December,0,0,0,0,0,0,3,0,0,es_tooltip-1,es_tooltip-2,th_tooltip-1,ths_tooltip-2,psh_tooltip-1,psh_tooltip-2
+University Park,-118.27883,34.027992,12/1/2018,1/1/2019,January,December,0,0,0,2,0,0,0,0,0,es_tooltip-1,es_tooltip-2,th_tooltip-1,ths_tooltip-2,psh_tooltip-1,psh_tooltip-2
+Watts,-118.24115,33.940453,12/1/2018,1/1/2019,January,December,0,0,0,0,0,0,12,4,200,es_tooltip-1,es_tooltip-2,th_tooltip-1,ths_tooltip-2,psh_tooltip-1,psh_tooltip-2
+West Vernon,-118.30019,34.000114,12/1/2018,1/1/2019,January,December,1,0,0,0,0,0,0,0,0,es_tooltip-1,es_tooltip-2,th_tooltip-1,ths_tooltip-2,psh_tooltip-1,psh_tooltip-2
+Westlake,-118.272224,34.05721,12/1/2018,1/1/2019,January,December,0,0,0,0,0,0,2,0,0,es_tooltip-1,es_tooltip-2,th_tooltip-1,ths_tooltip-2,psh_tooltip-1,psh_tooltip-2
+Wholesale District,-118.23311,34.041542,12/1/2018,1/1/2019,January,December,8,3,166.67,2,0,0,8,5,60,es_tooltip-1,es_tooltip-2,th_tooltip-1,ths_tooltip-2,psh_tooltip-1,psh_tooltip-2
